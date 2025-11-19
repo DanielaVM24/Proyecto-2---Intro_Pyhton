@@ -384,12 +384,12 @@ with tab_guion:
 """)
 
     guion = f"""
-1. Contexto (1–2 min)
+1. Contexto 
    - Objetivo: calcular %GC del 16S rRNA en múltiples bacterias y comparar.
    - Dataset: 9 organismos base + 5 adicionales sugeridos.
    - Entradas: archivos FASTA (16S rRNA); salidas: tabla, gráfico y conclusión automática.
 
-2. Lógica de solución (4–5 min)
+2. Lógica de solución 
    - Lectura de FASTA, limpiando a A/C/G/T/N.
    - Cálculo de %GC sobre ACGT y %N sobre total (ACGTN).
    - Validación de longitud esperada (16S: rango ajustable en la interfaz).
@@ -398,27 +398,27 @@ with tab_guion:
    - Visualización: tabla editable (por entrada y por organismo) y gráfico de barras.
    - Generación automática del párrafo de conclusión respondiendo quién tiene mayor y menor %GC.
 
-3. Retos técnicos (3–4 min)
+3. Retos técnicos 
    - Encabezados FASTA y nombres de archivo heterogéneos.
    - Secuencias parciales o con alta proporción de N.
    - Varias entradas por organismo → necesidad de agregar y resumir.
    - Rendimiento al manejar muchos archivos y evitar recomputar todo cada vez.
    - Presentar los resultados de forma clara y reutilizable (CSV, PNG, TXT).
 
-4. Resultados clave (2–3 min)
+4. Resultados clave 
    - Identificación del organismo con mayor %GC y con menor %GC.
    - Rango de variación entre los extremos y promedio general.
    - Interpretación biológica: estabilidad del ADN, genomas reducidos, nichos ecológicos y dependencia del huésped.
    - Relación con bacterias de genoma pequeño y de vida libre.
 
-5. Puntos de mejora (2–3 min)
+5. Puntos de mejora 
    - Validación de las secuencias con BLAST 16S para confirmar identidad.
    - Añadir barras de error (±DE) o pruebas estadísticas si hay réplicas.
    - Exportar reporte automático en PDF/HTML desde el mismo dashboard.
    - Crear versión en línea de comandos (CLI) que use los mismos cálculos.
    - Integrar pruebas automáticas (CI) en GitHub para validar cambios de código.
 
-6. Cierre (0.5–1 min)
+6. Cierre 
    - Demostración rápida: cargar algunos FASTA, mostrar tabla, gráfico y conclusión.
    - Preguntas y discusión sobre posibles extensiones del proyecto.
 """
@@ -461,3 +461,4 @@ with tab_frag:
   - Fragilidad: que el usuario no comprenda los indicadores de calidad.  
   - Mitigación: tooltips en columnas, mensajes claros en cada pestaña, y guion de presentación que explique la lógica.
 """)
+
